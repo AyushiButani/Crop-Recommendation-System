@@ -6,8 +6,8 @@ End-to-end crop recommendation project (ML + API + UI + Docker) that predicts th
 - **ML Model (Python, scikit-learn, XGBoost/Random Forest):** trained on soil + weather features
 - **Backend (Flask REST API):** serves predictions via API (model serialized with `joblib`)
 - **Frontend (React):** UI to input features and view recommended crop
-- **Streamlit Demo (optional):** quick interactive testing UI (inside `smart_recommender/`)
-- **Docker (optional):** containerized setup for reproducible runs
+- **Smart Recommender Module:** notebooks/scripts + Streamlit demo for interactive testing
+- **Docker:** containerized setup for reproducible runs
 
 ---
 
@@ -24,10 +24,10 @@ Soil + weather features:
 
 ---
 
-## Run Locally (Recommended)
+## Run Locally
 
 ### 1) Backend (Flask REST API)
-</> Bash
+
 cd server/ml_backend
 
 # create + activate virtual env
@@ -38,19 +38,4 @@ source venv/bin/activate
 pip install -r requirements.txt
 python app.py
 
-2) Frontend (React)
-cd frontend
-npm install
-npm start
-
-Streamlit Demo
-cd smart_recommender
-
-# create + activate virtual env
-python3 -m venv venv
-source venv/bin/activate
-
-# install deps + run Streamlit
-pip install -r requirements.txt
-streamlit run app.py
 
