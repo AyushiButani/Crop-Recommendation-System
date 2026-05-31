@@ -32,7 +32,7 @@ This was a 3-person group project. I led the **entire Data Science and Data Anal
 - Built correlation analysis and feature distributions using **pandas, Seaborn, and Matplotlib**
 
 **Machine Learning**
-- Trained and compared **4 classifiers**: Naive Bayes, Decision Tree, Random Forest, XGBoost
+- Trained and compared **3 classifiers**: Naive Bayes, Decision Tree, XGBoost
 - Tuned hyperparameters using GridSearchCV and applied cross-validation for reliable evaluation
 - Evaluated models on accuracy, precision, recall, and F1-score
 - **Final model: XGBoost, 99% accuracy**, saved with `joblib` for deployment
@@ -52,7 +52,7 @@ This was a 3-person group project. I led the **entire Data Science and Data Anal
 | Layer | Tools |
 |---|---|
 | **Data & ML** | Python, pandas, NumPy, scikit-learn, Seaborn, Matplotlib |
-| **Models** | XGBoost, Random Forest, Decision Tree, Naive Bayes |
+| **Models** | XGBoost, Decision Tree, Naive Bayes |
 | **Backend** | Flask (REST API) |
 | **Frontend** | React.js, CSS *(teammate-owned)* |
 | **Model Persistence** | joblib |
@@ -63,12 +63,11 @@ This was a 3-person group project. I led the **entire Data Science and Data Anal
 
 | Model | Accuracy |
 |---|---|
-| Naive Bayes | ~93% |
-| Decision Tree | ~95% |
-| Random Forest | ~97% |
-| **XGBoost** | **99%** ✅ |
+| Decision Tree | ~90% |
+| Naive Bayes | ~99% |
+| **XGBoost** | **>99%** ✅ |
 
-XGBoost was selected as the final production model due to its superior accuracy and robust handling of non-linear feature relationships.
+After comparing all three classifiers, XGBoost emerged as the top performer with the highest accuracy across the 7 input features (N, P, K, temperature, humidity, pH, rainfall). It was selected as the final production model due to its robust handling of non-linear feature relationships and consistent performance across all 22 crop categories.
 
 ---
 
